@@ -1,0 +1,151 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background: #f4f6f9;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4285f4;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #4285f4;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #3367d6;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    flex: 1;
+}
+
+#auth-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #d93025;
+}
+
+.hidden {
+    display: none;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+#logout-btn {
+    background: #e74c3c;
+    flex-shrink: 0;
+}
+
+#logout-btn:hover {
+    background: #c0392b;
+}
+
+.add-note {
+    display: flex;
+    gap: 10px;
+}
+
+.add-note input {
+    flex: 1;
+    min-width: 0;
+}
+
+.add-note button {
+    height: 43px;
+}
+
+#notes-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#notes-list li {
+    background: #f8f9fa;
+    padding: 12px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.note-text {
+    overflow-wrap: anywhere;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    padding: 7px 12px;
+    flex-shrink: 0;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+.empty-message {
+    color: #888;
+    text-align: center;
+    padding: 15px;
+}
